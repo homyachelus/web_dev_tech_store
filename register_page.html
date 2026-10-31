@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAGAZ / Вход и регистрация</title>
+    <link rel="stylesheet" href="register_page.css">
+    <link rel="stylesheet" href="product_page.css">
+    <link rel="stylesheet" href="filter.css">
+    <script type="module" src="register_page.js"></script>
+</head>
+<body>
+    <header id="head">
+        <h2>MAGAZ</h2>
+        
+        <div class="contacts-block">
+            <div class="contact-row">
+                <img class="header_icon" src="./image/phone_icon.png" alt="телефон">
+                <p>+7 (999) 999-99-99</p>
+            </div>
+            <div class="contact-row">
+                <img class="header_icon" src="./image/email_icon.png" alt="почта">
+                <p>email3@gmail.com</p>
+            </div>
+            <div class="contact-row">
+                <img class="header_icon" src="./image/geo_icon.png" alt="адрес">
+                <p>г. Самара, ул. Некрасовская, д. 43</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="auth-section">
+            <div class="auth-card">
+                <a class="auth-logo" href="products_page.html">MAGAZ</a>
+                <p class="auth-subtitle">Добро пожаловать!</p>
+
+                <div class="auth-tabs">
+                    <button id="login" class="auth-tab active" type="button">Вход</button>
+                    <button id="reg" class="auth-tab" type="button">Регистрация</button>
+                </div>
+                
+                <div id="reg_container"></div>
+                <p class="auth-note">Покупайте любимые товары вместе с MAGAZ</p>
+                <a href="products_page.html" class="auth-note">перейти к товарам -></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h2>MAGAZ</h2>
+    </footer>
+
+</body>
+</html>

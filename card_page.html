@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAGAZ/Корзина</title>
+    <link rel="stylesheet" href="product_page.css">
+    <link rel="stylesheet" href="filter.css">
+</head>
+<body>
+    <header id="head">
+        <a style="color: rgba(0, 0, 0, 0.71);" href="products_page.html"><h2>MAGAZ</h2></a>
+        
+        <div class="contacts-block">
+            <div class="contact-row">
+                <img class="header_icon" src="./image/phone_icon.png" alt="телефон">
+                <p>+7 (999) 999-99-99</p>
+            </div>
+            <div class="contact-row">
+                <img class="header_icon" src="./image/email_icon.png" alt="почта">
+                <p>email3@gmail.com</p>
+            </div>
+            <div class="contact-row">
+                <img class="header_icon" src="./image/geo_icon.png" alt="адрес">
+                <p>г. Самара, ул. Некрасовская, д. 43</p>
+            </div>
+        </div>
+    </header>
+
+    <main style="text-align: center;">
+        <div id="addProductModal" class="product-modal">
+            <div class="product-modal-content">
+                <span class="product-modal-close" id="close_add_modal">&times;</span>
+                <h2>Добавить новый товар</h2>
+                
+                <div class="add-product-form">
+                    <input id="add_name" placeholder="название товара" />
+                    <input id="add_price" placeholder="цена" />
+                    <input id="add_quantity" placeholder="начально количество на складе" />
+                    <input id="add_image" placeholder="ссылка на картинку" />
+                    
+                    <br />
+                    <select id="add_category">
+                        <option value="" disabled selected>Выберите категорию</option>
+                        <option value="1">Ноутбуки</option>
+                        <option value="2">Планшеты</option>
+                        <option value="3">Телефоны</option>
+                    </select>
+
+                    <select id="add_brand">
+                        <option value="" disabled selected>Выберите бренд</option>
+                        <option value="1">Apple</option>
+                        <option value="2">Samsung</option>
+                        <option value="3">Xiaomi</option>
+                        <option value="4">Asus</option>
+                        <option value="5">Lenovo</option>
+                    </select>
+
+                    <button id="submit_add_product" class="go-shopping-btn" style="margin-top: 15px; width: 100%;">Добавить товар</button>
+                </div>
+            </div>
+        </div>
+        <div id="user_card"></div>
+
+        <button style="cursor: pointer; border: none;" id="do_order" class="go-shopping-btn">заказать</button> 
+        <br>
+        <a href="products_page.html"><h3 class="go-shopping-btn">посмотреть другие товары -></h3></a>
+    </main>
+
+    <footer>
+        <h2>MAGAZ</h2>
+    </footer>
+
+    <script type="module" src="card_page.js" defer></script>
+</body>
+</html>

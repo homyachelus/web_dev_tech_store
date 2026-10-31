@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAGAZ/Аккаунт</title>
+    <link rel="stylesheet" href="product_page.css">
+    <link rel="stylesheet" href="register_page.css">
+    <link rel="stylesheet" href="account_page.css">
+</head>
+<body>
+    <header id="head">
+        <a style="color: rgb(29, 65, 43);" href="products_page.html"><h2>MAGAZ</h2></a>
+        
+        <div class="contacts-block">
+            <div class="contact-row">
+                <img class="header_icon" src="./image/phone_icon.png" alt="телефон">
+                <p>+7 (999) 999-99-99</p>
+            </div>
+            <div class="contact-row">
+                <img class="header_icon" src="./image/email_icon.png" alt="почта">
+                <p>email3@gmail.com</p>
+            </div>
+            <div class="contact-row">
+                <img class="header_icon" src="./image/geo_icon.png" alt="адрес">
+                <p>г. Самара, ул. Некрасовская, д. 43</p>
+            </div>
+        </div>
+    </header>
+
+    <main id="container_main" style="width: 100%;">
+        <div class="profile-card">
+            <div class="profile-info">
+                <img class="account_image" src="./image/account_icon.png" alt="фото аккаунта">
+                <div class="profile-text">
+                    <h1 id="user_name"></h1>
+                    <h2 id="user_email"></h2>
+                    <!-- <h2 id="user_id"></h2> -->
+                </div>
+            </div>
+
+            <div id="container_account">
+                <div id="order_cont">
+                    <h2 style="color:rgb(180, 180, 180); text-align: left; font-size: 16px; font-weight: 400;">* Тут вы можете изменить имя</h2>
+                    <input type="text" id="new_name_input" placeholder="Введите новое имя" style="width: 100%; margin-bottom: 10px; border-color: rgb(180, 180, 180);">
+                    
+                    <button id="save_name_btn" class="basic-btn">Сохранить</button>
+                    
+                    <br>
+                    <br>
+
+                    <h2 style="color:rgb(180, 180, 180); text-align: left; font-size: 16px; font-weight: 400;">* Тут вы можете изменить почту или логин</h2>
+                    <input type="email" id="new_email_input" placeholder="Введите новую почту или логин" style="width: 100%; margin-bottom: 10px; border-color: rgb(180, 180, 180);">
+                    
+                    <button id="save_email_btn" class="basic-btn">Сохранить</button>
+                </div>
+
+
+                <div id="order_btn">
+                    <br />
+                    <br />
+                    <br>
+                    <button onclick="window.location.href='order_page.html'" class="basic-btn">Перейти к заказам</button>
+                </div>
+                
+
+                <br />
+                <br />
+                <br>
+                <button id="logout_btn" class="logout-btn">Выйти из аккаунта</button>
+            </div>
+
+            <a class="go-shopping-btn" href="products_page.html">к товарам -></a>
+        </div>
+    </main>
+
+    <footer>
+        <h2>MAGAZ</h2>
+    </footer>
+
+    <script type="module" src="account_page.js" defer></script>
+</body>
+</html>
