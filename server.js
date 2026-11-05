@@ -21,7 +21,7 @@ const connection  = mysql.createConnection({
     host: "31.76.12.103",
     user: "isp-41_lipatova_yuv",
     database: "isp-41_lipatova_yuv_web_dev",
-    password: "isp-41_lipatova_yuv"
+    password: "***"
 }).promise();
 
 // async function admin_reg(name, login, password) {
